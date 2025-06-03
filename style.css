@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #1d1731, #17354a);
+  color: #f5f5f5;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Loader */
+.loader {
+  color: #e0e0ff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: flicker 2s infinite alternate;
+}
+.gradient-text {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #b841f3, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Hidden Content Initially */
+.hidden {
+  display: none;
+}
+
+/* Sections */
+section {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Titles */
+h1,
+h2 {
+  color: #c6b4f2;
+  margin-bottom: 1rem;
+}
+
+/* Welcome */
+.welcome p {
+  font-size: 1.2rem;
+  color: #cfd0f7;
+}
+
+.profile-pic {
+  width: 300px;
+  height: auto;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #0b0c2a;
+
+  /* #7b4dfd */
+}
+
+/* About, Mission, Poem */
+.about p,
+.mission p,
+.poem p {
+  color: #d6d7ff;
+  font-size: 1rem;
+}
+
+/* Birthday message */
+.birthday-message {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.birthday-message h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+input[type="text"],
+textarea {
+  width: 80%;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: #0b0c2a;
+  color: white;
+  resize: none;
+}
+
+.birthday-message input[type="text"] {
+  height: 50px;
+}
+
+.submit-message {
+  background-color: #7b4dfd;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-message:hover {
+  background-color: #5f38d4;
+}
+
+/* Gift Section */
+.gift {
+  margin-top: 3rem;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gift-card {
+  background: #181942;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.gift-card h2 {
+  margin-bottom: 1rem;
+}
+
+.gift-card p {
+  margin-bottom: 1.5rem;
+  color: #e0e0ff;
+}
+
+.gift-button {
+  display: inline-block;
+  background: #7b4dfd;
+  color: white;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.gift-button:hover {
+  background: #5f38d4;
+}
+
+/* Footer */
+.footer {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #8e8eff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .birthday-message {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

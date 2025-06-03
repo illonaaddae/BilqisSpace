@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="I am a Software Engineer with a passion for leveraging technology to create positive impact..."
+    />
+    <title>BilqisSpace | Beyond Limits</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" href="fav/favicon.ico" />
+    <link rel="manifest" href="fav/manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+      <p>☁️ Launching Nana Ama’s Space...✨🚀</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" class="hidden">
+      <section class="welcome">
+        <p>🙋‍♀️ Welcome to</p>
+        <h1>
+          <span class="gradient-text">Nana Ama Sarkodie’s</span> Birthday Space
+          😊
+        </h1>
+        <p>
+          👩‍💻 Beyond limits, beyond stars, she builds a future only she can
+          imagine. 🚀✨
+        </p>
+        <img
+          src="nana-closeup-img.jpg"
+          alt="Nana Ama Sarkodie"
+          class="profile-pic"
+        />
+      </section>
+
+      <section class="about">
+        <h2>About Nana Ama</h2>
+        <p>
+          🎖️ Bilqis Nana Ama Sarkodie is a young girl with a lot of dreams. A
+          future Cyber Defender, beginner software engineer, Communication
+          Director at IGF Ghana, actress, writer, and passionate women's
+          empowerment advocate based in Ghana.
+        </p>
+      </section>
+
+      <section class="mission">
+        <h2>Mission & Dreams</h2>
+        <p>
+          Nana Ama's mission is to master machine learning, software
+          engineering, robotics, and AI for real-world impact. She dreams of
+          founding an NGO for the needy and becoming a Cyber Defender and Data
+          Analyst. Her determination and hard work fuel her journey.
+        </p>
+      </section>
+
+      <section class="poem">
+        <h2>A Birthday Wish</h2>
+        <img src="nana-img1.jpg" alt="Nana Ama" class="profile-pic" />
+        <p>
+          👩‍💻 To myself, I say this: Happy birthday to you beautiful 🎂🎉 I
+          celebrate you today 🤗😍 I wish for long life, more money, and
+          prosperity 🤲🙏. I thank God for everything 🙏 God bless your
+          beautiful soul 🎉
+        </p>
+      </section>
+
+      <section class="gift">
+        <div class="gift-card">
+          <h2>🎁 Celebrate Me 🎉</h2>
+          <p>
+            Thank you for being part of my journey! If you would like to support
+            my dreams and adventures, feel free to send a gift. Your kindness
+            fuels my ambition 🫶.
+          </p>
+          <a
+            href="https://paystack.shop/pay/nanaamasarkodie"
+            target="_blank"
+            rel="noopener"
+            class="gift-button"
+            >Send a Gift via MoMo 🎁</a
+          >
+        </div>
+      </section>
+
+      <section class="birthday-message">
+        <h2>Leave a Birthday Message for Nana</h2>
+        <form
+          action="https://formsubmit.co/sarkodiebilqis@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <textarea
+            name="message"
+            placeholder="Write your birthday message here..."
+            required
+          ></textarea>
+          <button type="submit" class="submit-message">Send Message</button>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <p>Built with love 💙 by Mommy ✨</p>
+      </footer>
+    </div>
+
+    <!-- Script -->
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").classList.remove("hidden");
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
