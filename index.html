@@ -28,6 +28,8 @@
     <link rel="icon" type="image/png" href="fav/favicon.ico" />
     <link rel="manifest" href="fav/manifest.webmanifest" />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -39,6 +41,16 @@
       <p>☁️ Launching Nana Ama’s Space...✨🚀</p>
     </div>
 
+    <!-- SMOOTH BACKGROUND MUSIC -->
+    <audio id="bg-music" autoplay muted loop preload="auto">
+      <source src="audio/birthday-music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- FLOATING TOGGLE BUTTON -->
+    <button id="music-btn" class="toggle-music" aria-label="Toggle Music">
+      🔈
+    </button>
     <!-- Main Content -->
     <div id="content" class="hidden">
       <section class="welcome">
@@ -82,10 +94,9 @@
         <h2>A Birthday Wish</h2>
         <img src="nana-img1.jpg" alt="Nana Ama" class="profile-pic" />
         <p>
-          👩‍💻 To myself, I say this: Happy birthday to you beautiful 🎂🎉 I
-          celebrate you today 🤗😍 I wish for long life, more money, and
-          prosperity 🤲🙏. I thank God for everything 🙏 God bless your
-          beautiful soul 🎉
+          👩‍💻 To myself, I say this: Happy birthday to you beautiful I celebrate
+          you today I wish for long life, more money, and prosperity . I thank
+          God for everything God bless your beautiful soul 🙏 🎉
         </p>
       </section>
 
@@ -127,15 +138,5 @@
         <p>Built with love 💙 by Mommy ✨</p>
       </footer>
     </div>
-
-    <!-- Script -->
-    <script>
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("content").classList.remove("hidden");
-        }, 2000);
-      });
-    </script>
   </body>
 </html>

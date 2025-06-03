@@ -60,6 +60,25 @@ h2 {
   color: #cfd0f7;
 }
 
+/* Music */
+.toggle-music {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #1d1731, #17354a);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+
+.toggle-music:hover {
+  background: #1d1731;
+}
 .profile-pic {
   width: 300px;
   height: auto;
