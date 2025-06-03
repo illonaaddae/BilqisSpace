@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: linear-gradient(to right, #1d1731, #17354a);
+  --text: #d6d7ff;
+  --accent: #ff4081;
+}
+
+.dark-mode {
+  --bg: rgba(255, 255, 255, 0.1);
+  --text: #f4f4f4;
+  --accent: #ff4081;
+}
+
 /* Body */
 body {
   font-family: "Poppins", sans-serif;
@@ -60,7 +72,6 @@ h2 {
   color: #cfd0f7;
 }
 
-/* Music */
 .toggle-music {
   position: fixed;
   top: 20px;
@@ -77,7 +88,7 @@ h2 {
 }
 
 .toggle-music:hover {
-  background: #1d1731;
+  background: #0b0c2a;
 }
 .profile-pic {
   width: 300px;
